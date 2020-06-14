@@ -1,0 +1,380 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navigation Desktop Section*/
+
+.desktopnav {
+    height: 64px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 32px;
+    margin-left: 24px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    margin: 0px 8px 0px 8px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+.desktop {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+.mobile ul {
+    justify-content: space-around;
+    height: 64px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Mobile Section*/
+
+@media only screen and (max-width: 700px) {
+    .desktopnav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .mobilenav {
+        display: none;
+    }
+}
+
+/*Module 1 Desktop Section*/
+
+.students {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.module1 {
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: row;
+    padding-right: 24px;
+}
+#module1text {
+    align-self: center;
+}
+h1 {
+    /*tag for biggest text*/
+    font-size: 50px;
+}
+h3 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+.button {
+    border: none;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #4a4a4a;
+    width: 100%;
+    height: 64px;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+/*Module 1 Mobile Section*/
+@media only screen and (max-width: 700px) {
+    .module1 {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .students {
+        width: 100%;
+        margin: 0px;
+    }
+    #module1text {
+        padding: 0px 16px 24px 16px;
+    }
+}
+
+/*Module 2 Desktop Section*/
+
+.module2 {
+    display: flex;
+    flex-direction: row;
+   background-color: #ffffff;
+}
+
+/*Column left*/
+
+.columnleft {
+    width: 60%;
+    padding: 32px 24px;
+}
+.manreading {
+    width: 100%;
+}
+h1 {
+    font-size: 50px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    margin-top: 0px;
+    padding-top: 8px;
+}
+h4 {
+    font-size: 24px;
+    padding-bottom: 32px;
+}
+#module2h3 {
+    padding-top: 32px;
+}
+
+/*Column right */
+
+.columnright {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 40%;
+    padding-top: 32px;
+}
+.flex-row3 {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+}
+.module2image {
+    width: 35%;
+}
+.module2text {
+    padding-left: 16px;
+}
+.orientation {
+    background-color: #f3f5f5;
+    padding-top: 0px;
+}
+.campus {
+    background-color: #f3f5f5;
+}
+.guest {
+    background-color: #d8d8d8;
+}
+.readmore {
+    text-decoration: none;
+}
+
+/*Module 2 Mobile Section*/
+@media only screen and (max-width: 700px) {
+    .columnleft {
+        display: none;
+    }
+    .columnright {
+        width: 100%;
+    }
+    .flex-row3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .module2image {
+        width: 100%;
+        object-fit: contain;
+        height: 200px;
+    }
+}
+
+/*Module 3 Desktop Section*/
+
+.module3 {
+    background-color: #EAEBEC;
+    padding: 0px 56px;
+    padding-bottom: 32px;
+}
+.module3image {
+    width: 100%;
+}
+.module3h1 {
+    /*font-size: 50px;*/
+    /*defined in second module: line 109*/
+    /* padding-top: 32px;*/
+    /*defined in second module: line 110*/
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+/*h2 {
+    font-size: 36px;
+}
+h3 {
+    margin-top: 0px;
+    padding-top: 8px; */
+
+/*}*/
+
+.module3text {
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+.toprow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 32px;
+}
+.bottomrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.module3column {
+    background-color: #ffffff;
+    margin: 0px 16px;
+    flex: 1 1 0px;
+}
+
+/*Module 3 Mobile Section */
+@media only screen and (max-width: 700px) {
+    .module3 {
+        padding: 16px;
+    }
+    .module3column {
+        background-color: #EAEBEC;
+    }
+    .toprow, .bottomrow {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .module3image {
+        display: none;
+    }
+    .module3text h3 {
+        display: none;
+    }
+    .module3text {
+        background-color: #d8d8d8;
+        margin: 0px 0px 8px 0px;
+    }
+    .module3text h2 {
+        padding: 16px 16px 16px 16px;
+    }
+}
+/* Module 4 Desktop Section */
+
+.module4 {
+    background-color: #f3f5f5;
+}
+
+/*#module3h1 {
+/*font-size: 50px;*/            /*defined in second module: line 109*/
+/* padding-top: 32px;*/         /*defined in second module: line 110*/
+/*text-align: center;*/
+/*padding-bottom: 32px;*/
+/*}*/
+
+.bothcolumns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*Column lelf*/
+
+.columnleftmodule4 {
+    width: 60%;
+    padding: 32px 24px;
+    background-color: #f3f5f5;
+}
+
+/*h2 { 
+    font-size: 36px;
+}
+h3 {
+    margin-top: 0px;
+    padding-top: 8px; */
+
+/*Column right*/
+
+.columnrightmodule4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    padding-top: 32px;
+}
+.flex-row4 {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+}
+.module4text {
+    padding-left: 16px;
+}
+
+/*.module2image {
+    width: 35%; 
+}*/
+
+#fisma {
+    padding-top: 0px;
+    background-color: #d8d8d8;
+}
+#fismaimg {
+    padding-top: 0px;
+}
+
+/* Module 4 Mobile Section */
+@media only screen and (max-width: 700px) {
+    .columnleftmodule4 {
+        width: 100%;
+        padding: 32px 24px;
+    }
+    .columnleftmodule4 h2 {
+        display: none;
+    } 
+    .columnleftmodule4 h3 {
+        display: none;
+    }   
+    .columnrightmodule4 {
+        display: none;
+    }
+    }
+/*Footer Section Desktop*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    border-top: 1px solid #EAECEC; 
+}
+#copyright {
+    margin-left: 24px;
+}
+#terms {
+    margin-right: 24px;
+}
